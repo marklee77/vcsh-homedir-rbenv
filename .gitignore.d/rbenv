@@ -1,0 +1,10 @@
+*
+!.config
+!.config/mr
+!.config/mr/config.d
+!.config/mr/config.d/rbenv
+!.config/zsh
+!.config/zsh/config.d
+!.config/zsh/config.d/rbenv
+!.gitignore.d
+!.gitignore.d/rbenv
