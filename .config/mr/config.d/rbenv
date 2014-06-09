@@ -9,3 +9,7 @@ gc       = vcsh common gc
 [.rbenv]
 checkout = git clone https://github.com/sstephenson/rbenv.git .rbenv
 push = /bin/true
+
+[.rbenv/plugins/ruby-build]
+checkout = git clone https://github.com/sstephenson/ruby-build.git ruby-build
+push = /bin/true
