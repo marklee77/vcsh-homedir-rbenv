@@ -1,10 +1,10 @@
 [$XDG_CONFIG_HOME/vcsh/repo.d/rbenv.git]
 checkout = vcsh clone git@github.com:marklee77/vcsh-homedir-rbenv.git rbenv
-commit   = vcsh common commit -a
-update   = vcsh common pull
-push     = vcsh common push
-status   = vcsh common status
-gc       = vcsh common gc
+commit   = vcsh rbenv commit -a
+update   = vcsh rbenv pull
+push     = vcsh rbenv push
+status   = vcsh rbenv status
+gc       = vcsh rbenv gc
 
 [.rbenv]
 checkout = git clone https://github.com/sstephenson/rbenv.git .rbenv
