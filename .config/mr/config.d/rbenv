@@ -1,4 +1,4 @@
-[$XDG_CONFIG_HOME/vcsh/repo.d/rbenv.git]
+[${XDG_CONFIG_HOME:-$HOME/.config}/vcsh/repo.d/rbenv.git]
 checkout = vcsh clone git@github.com:marklee77/vcsh-homedir-rbenv.git rbenv
 commit   = vcsh rbenv commit -a
 update   = vcsh rbenv pull
