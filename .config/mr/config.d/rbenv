@@ -8,8 +8,8 @@ gc       = vcsh rbenv gc
 
 [.rbenv]
 checkout = git clone https://github.com/sstephenson/rbenv.git .rbenv
-push = /bin/true
+skip     = test "$1" = push
 
 [.rbenv/plugins/ruby-build]
 checkout = git clone https://github.com/sstephenson/ruby-build.git ruby-build
-push = /bin/true
+skip     = test "$1" = push
