@@ -1,2 +1,11 @@
 export PATH="${PATH}:${HOME}/.rbenv/bin"
+
+function rbenv_info {
+    RBENV_VERSION=$(rbenv version-name)
+    if [ "${RBENV_VERSION}" != "system" ]; then
+      echo '%F{004}%Bruby-'${RBENV_VERSION}'%b%f '
+    fi
+}
+
+
 eval "$(rbenv init -)"
