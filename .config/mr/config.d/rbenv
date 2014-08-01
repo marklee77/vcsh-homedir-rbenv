@@ -1,7 +1,11 @@
-[.rbenv]
+[${XDG_CONFIG_HOME:-$HOME/.config}/vcsh/repo.d/rbenv.git]
+checkout = vcsh clone https://gitlab.stillwell.me/mark/vcsh-homedir-rbenv.git rbenv
+setpush  = vcsh rbenv remote set-url --push origin git@stillwell.me:mark/vcsh-homedir-rbenv.git
+
+[${HOME}/.rbenv]
 checkout = git clone https://github.com/sstephenson/rbenv.git .rbenv
 skip     = test "$1" = push
 
-[.rbenv/plugins/ruby-build]
+[${HOME}/.rbenv/plugins/ruby-build]
 checkout = git clone https://github.com/sstephenson/ruby-build.git ruby-build
 skip     = test "$1" = push
