@@ -1,7 +1,8 @@
 [${HOME}/.rbenv]
 checkout = git clone https://github.com/sstephenson/rbenv.git .rbenv
-skip     = test "$1" = push
+skip     = [ "$1" = push ] || [ "$1" = autopush ]
+
 
 [${HOME}/.rbenv/plugins/ruby-build]
 checkout = git clone https://github.com/sstephenson/ruby-build.git ruby-build
-skip     = test "$1" = push
+skip     = [ "$1" = push ] || [ "$1" = autopush ]
