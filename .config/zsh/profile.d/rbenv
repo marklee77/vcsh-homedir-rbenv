@@ -1,4 +1,4 @@
-export PATH="${PATH}:${HOME}/.rbenv/bin"
+path=("${HOME}/.rbenv/bin" $path)
 
 function rbenv_info {
     RBENV_VERSION=$(rbenv version-name)
@@ -6,6 +6,5 @@ function rbenv_info {
       echo '%F{004}%Bruby-'${RBENV_VERSION}'%b%f '
     fi
 }
-
 
 eval "$(rbenv init -)"

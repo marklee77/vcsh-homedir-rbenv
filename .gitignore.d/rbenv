@@ -4,7 +4,7 @@
 !.config/mr/config.d
 !.config/mr/config.d/rbenv
 !.config/zsh
-!.config/zsh/rc.d
-!.config/zsh/rc.d/rbenv
+!.config/zsh/profile.d
+!.config/zsh/profile.d/rbenv
 !.gitignore.d
 !.gitignore.d/rbenv
