@@ -1,5 +1,7 @@
 path=("${HOME}/.rbenv/bin" $path)
 
+export PROMPT_INFO="${PROMPT_INFO}\$(rbenv_info)"
+
 function rbenv_info {
     RBENV_VERSION=$(rbenv version-name)
     if [ "${RBENV_VERSION}" != "system" ]; then
