@@ -15,3 +15,7 @@ skip     = [ "$1" = push ] || [ "$1" = autopush ]
 [${HOME}/.rbenv/plugins/rbenv-gemset]
 checkout = git clone https://github.com/jf/rbenv-gemset.git rbenv-gemset
 skip     = [ "$1" = push ] || [ "$1" = autopush ]
+
+[${HOME}/.rbenv/plugins/bundler]
+checkout = git clone https://github.com/carsomyr/rbenv-bundler.git bundler
+skip     = [ "$1" = push ] || [ "$1" = autopush ]
